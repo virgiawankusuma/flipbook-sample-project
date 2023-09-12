@@ -15,9 +15,8 @@
 
   <script type="text/javascript">
     $(document).ready(function () {
-      $("#read").flipBook({
+      $("#container").flipBook({
         pdfUrl:'assets/filepdf/panduan-skripsi-2019.pdf', // PDF URL
-        lightBox:true,
         layout:3,
         currentPage:{vAlign:"bottom", hAlign:"left"},
         // BTN SETTING
@@ -41,13 +40,14 @@
   </script>
 </head>
 <body>
-  <div class="button">
+  <!-- <div class="button">
     <button 
       id="read"
       style="width: 100%; height: 100%;"
     >
       Baca PDF
     </button>
-  </div>
+  </div> -->
+  <div id="container"></div>
 </body>
 </html>
